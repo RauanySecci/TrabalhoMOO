@@ -1,0 +1,24 @@
+# FastAPI framework e dependências
+fastapi==0.115.5
+uvicorn==0.32.1
+starlette==0.41.3
+pydantic_settings
+
+# Dependências do PostgreSQL
+psycopg2==2.9.7  # Driver para PostgreSQL
+sqlalchemy==2.0.21  # ORM para integração com o PostgreSQL
+
+# Utilidades
+python-dotenv==1.0.1  # Carregar variáveis de ambiente de um arquivo .env
+loguru==0.7.0  # Sistema de logs avançado
+typing_extensions==4.12.2  # Extensões de tipos para compatibilidade
+
+# Asyncio e suporte a eventos
+anyio==4.6.2.post1
+sniffio==1.3.1
+
+# Outras dependências
+click==8.1.7
+colorama==0.4.6
+cffi==1.17.1
+cryptography==43.0.3
