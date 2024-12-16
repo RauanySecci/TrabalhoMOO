@@ -3,11 +3,6 @@ let btnInscrever = document.querySelector("#ba1");
 // Arrays para armazenar os dados dos atletas
 let atletas = [];
 
-// Função para validar o ano de ingresso
-function validarAno(ano) {
-    const anoAtual = new Date().getFullYear();
-    return ano > 1900 && ano <= anoAtual;
-}
 
 // Função para carregar cursos com base no código da universidade
 async function carregarCursos(universidadeCodigo) {
@@ -56,48 +51,6 @@ async function carregarCursos(universidadeCodigo) {
     }
 }
 
-// Evento que será disparado quando a universidade for selecionada
-document.querySelector("#universidade").addEventListener("change", function() {
-    const universidadeCodigo = this.value; // Pega o código da universidade selecionada
-    carregarCursos(universidadeCodigo); // Chama a função para carregar os cursos
-});
-
-async function carregarUFs() {
-    try {
-        const response = await fetch("http://127.0.0.1:2000/uf-code");
-
-        // Verificar se a resposta foi bem-sucedida
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.detail || "Erro ao buscar UFs");
-        }
-
-        const data = await response.json();
-
-        // Verifica se os dados recebidos são válidos
-        if (!data.message) {
-            throw new Error("Dados inválidos recebidos do servidor.");
-        }
-
-        const selectUF = document.querySelector("#uf");
-
-        // Limpando o dropdown antes de preencher
-        selectUF.innerHTML = "<option value=''>Selecione um estado (UF)</option>";
-
-        // Preenchendo as opções com os dados retornados
-        data.message.forEach((uf) => {
-            const option = document.createElement("option");
-            option.value = uf.CODIGO_UF; // Código como valor
-            option.textContent = uf.SIGLA; // Sigla como texto exibido
-            selectUF.appendChild(option);
-        });
-    } catch (error) {
-        console.error("Erro ao carregar UFs:", error);
-        
-        // Exibe a mensagem de erro para o usuário
-        alert(`Erro ao carregar UFs: ${error.message}`);
-    }
-}
 
 // Função para buscar universidades do backend
 async function carregarUniversidades() {

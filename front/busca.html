@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gestão Bibliotecária</title>
+		<link rel="icon" href="./imagem/logo_bib.png" />
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="estilo/estilos.css">
+		<style>
+			.filter-container {
+				margin: 20px;
+			}
+
+			#filter-button {
+				background-color: #f0f3df;
+				padding-bottom: 50px;
+			}
+
+			#filter-button:hover {
+				box-shadow: 0px 0px 0.5em #f0f3df;
+			}
+
+			#filter-form {
+				display: none; /* Oculta o formulário por padrão */
+				align-items: center;
+				gap: 15px;
+				margin-top: 20px;
+			}
+
+			#filter-form label {
+				display: block;
+				border-radius: 20px;
+				font-size: 20px;
+			}
+
+			#filter-form input,
+			#filter-form select {
+				padding: 8px;
+				width: 100%;
+				max-width: 300px;
+				margin-bottom: 10px;
+			}
+
+			.hidden {
+				display: none;
+			}
+		</style>
+			
+	</head> 
+
+	<body id="pagina" class="princ">
+
+		<!-- Cabeçalho -->
+		<nav class="navbar navbar-expand-md fixed-top navbar-dark" id="navbar">
+			<a class="navbar-brand" href="index.html">
+				<img src="./imagem/logo_bib.png" width="50" height="50" alt="Logo">
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+				<span class="navbar-toggler-icon"></span>                       
+			</button>
+
+			<div class="collapse navbar-collapse" id="myNavbar"> 
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="busca.html">BUSCAR SALA</a></li>
+					<li class="nav-item"><a class="nav-link" href="cadastro.html">CADASTRAR SALA</a></li>
+					<li class="nav-item"><a class="nav-link" href="sobre.html">SOBRE NÓS</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+				
+		<!-- Pesquisa -->
+		<div style="margin-top: 150px;">
+			<div id="pesquisa" class="container-fluid text-center">
+				<h2>Buscar sala</h2>
+				<div class="row justify-content-center">
+					<div class="col-sm-6 form-group">
+						<label for="numero" class="d-block text-center" style="white-space: nowrap; text-align: center; display: block; margin: 0 auto; width: fit-content;">
+							Insira o número da sala que deseja buscar
+						</label>
+
+						<div class="filter-container">
+							<button id="filter-button" class="btn">Filtros</button>
+							<form id="filter-form" class="hidden">
+							  <label for="andar">Andar:</label>
+							  <input class="form-control" type="number" id="andar" name="andar" placeholder="Andar">
+						
+							  <label for="biblioteca">Biblioteca:</label>
+							  <select class="form-control" id="biblioteca" name="biblioteca" >
+								<option value="">Biblioteca</option>
+							  </select>
+						
+							  <label for="capacidade">Capacidade:</label>
+							  <input class="form-control" type="number" id="capacidade" name="capacidade" placeholder="Capacidade">
+						
+							  <label for="disponibilidade">Disponibilidade:</label>
+							  <select class="form-control" id="disponibilidade" name="disponibilidade">
+								<option value="True">Disponível</option>
+								<option value="False">Indisponível</option>
+							  </select>
+							</form>
+						</div>
+						<br>
+						<input class="form-control" id="numero" placeholder="Numero" type="number" style="width: 300px; display: block; margin: 0 auto;"  required>
+					</div>
+				</div>
+				<button class="btn" type="button" id="ba2" style="padding-bottom: 50px;">
+					BUSCAR
+				</button>
+			</div>
+			<script src = "./scripts/inscrito.js">	</script>
+		</div>
+	</body>
+</html>

@@ -2,27 +2,27 @@ let btnVerificar = document.querySelector("#ba2");
 
 btnVerificar.addEventListener("click", async function () {
     // Capturar o valor do campo CPF
-    let cpf = document.querySelector("#cpf").value.trim();
+    let numero = document.querySelector("#numero").value.trim();
 
-    // Validação: CPF não pode ser vazio e deve ter exatamente 11 dígitos
-    if (!cpf) {
-        alert("O campo CPF não pode estar vazio.");
+    // Validação: numero não pode ser vazio e deve ter exatamente 11 dígitos
+    if (!numero) {
+        alert("O campo número não pode estar vazio.");
         return;
     }
 
-    if (cpf.length !== 11 || isNaN(cpf)) {
-        alert("CPF inválido. Certifique-se de que possui exatamente 11 dígitos numéricos.");
-        return;
-    }
+    // if (numero.length !== 11 || isNaN(numero)) {
+    //     alert("Numero inválido. Certifique-se de que possui exatamente 11 dígitos numéricos.");
+    //     return;
+    // }
 
     try {
         // Enviar requisição para o backend
-        let response = await fetch("http://127.0.0.1:2000/verify-cpf", {
+        let response = await fetch("http://127.0.0.1:2000/verify-numero", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ cpf: cpf }) // Envia o CPF no corpo da requisição
+            body: JSON.stringify({ numero: numero }) // Envia o numero no corpo da requisição
         });
 
         if (!response.ok) {
@@ -34,14 +34,14 @@ btnVerificar.addEventListener("click", async function () {
         let data = await response.json();
 
         if (data.message) {
-            // Armazena o CPF no Session Storage
-            sessionStorage.setItem("cpf", cpf);
+            // Armazena o numero no Session Storage
+            sessionStorage.setItem("numero", numero);
 
             // Redirecionar para a página de pesquisa
             window.location.href = "pesquisa.html";
         } else {
-            // CPF não encontrado no banco de dados
-            alert("CPF não encontrado no banco de dados.");
+            // numero não encontrado no banco de dados
+            alert("Numero não encontrado no banco de dados.");
         }
     } catch (error) {
         // Exibir a mensagem de erro no console para depuração
@@ -51,5 +51,26 @@ btnVerificar.addEventListener("click", async function () {
         alert(`Erro ao conectar ao servidor: ${error.message}`);
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const filterButton = document.getElementById("filter-button");
+    const filterForm = document.getElementById("filter-form");
+  
+    filterButton.addEventListener("click", function() {
+      if (filterForm.style.display === "none" || filterForm.classList.contains("hidden")) {
+        filterForm.style.display = "flex"; // Mostra o formulário
+        filterForm.classList.remove("hidden");
+        filterButton.textContent = "Filtros";
+      } else {
+        filterForm.reset(); // Limpa os inputs do formulário
+        filterForm.style.display = "none"; // Oculta o formulário
+        filterForm.classList.add("hidden");
+        filterButton.textContent = "Filtros";
+      }
+    });
+  
+    // Inicializa o formulário oculto
+    filterForm.style.display = "none";
+  });
 
 

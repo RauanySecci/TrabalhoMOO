@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Esporte Universitarios </title>
-		<link rel="icon" href="./imagem/Capturar.PNG" />
+		<title>Gestão Bibliotecária</title>
+		<link rel="icon" href="./imagem/logo_bib.png" />
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -19,7 +19,7 @@
 	<nav class="navbar navbar-expand-md fixed-top navbar-dark" id="navbar">
 
 		<a class="navbar-brand" href="index.html">
-			<img src="./imagem/Capturar.PNG" width="50" height="50" alt="Logo">
+			<img src="./imagem/logo_bib.png" width="50" height="50" alt="Logo">
 		</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -28,87 +28,45 @@
 
 		<div class="collapse navbar-collapse" id="myNavbar"> 
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="inscrito.html">PESQUISA</a></li>
-				<li class="nav-item"><a class="nav-link" href="cadastro.html">CADASTRO</a></li>
+				<li class="nav-item"><a class="nav-link" href="busca.html">BUSCAR SALA</a></li>
+				<li class="nav-item"><a class="nav-link" href="cadastro.html">CADASTRAR SALA</a></li>
 				<li class="nav-item"><a class="nav-link" href="sobre.html">SOBRE NÓS</a></li>
 			</ul>
 		</div>
 
 	</nav>
 				
-	<!-- Cadastro -->
+<!-- Cadastro -->
 	<div style="margin-top: 70px;">
 
 			<div id="cadastro" class="container-fluid text-center">
-				<h2>Cadastro de Atleta</h2>
-				<label for="cpf" class="d-block text-center" style="white-space: nowrap; text-align: center; display: block; margin: 0 auto; width: fit-content;">
-					Preencha seus dados para se cadastrar
+				<h2>Cadastro de Sala de Estudos</h2>
+				<label for="numero" class="d-block text-center" style="white-space: nowrap; text-align: center; display: block; margin: 0 auto; width: fit-content;">
+					Preencha os dados da Sala
 				</label><br>
 				<div class="row">
 					<div class="col-sm-6 form-group">
-						<input class="form-control" id="cpf"  placeholder="CPF" type="text" required>
+						<input class="form-control" id="numero"  placeholder="Numero" type="number" required>
 					</div>
 					
 					<div class="col-sm-6 form-group">
-						<input class="form-control" id="nome"  placeholder="Nome" type="text" required>
+						<input class="form-control" id="andar"  placeholder="Andar" type="number" required>
 					</div>
 
 					<div class="col-sm-6 form-group">
-						<select class="form-control" id="genero" required>
-							<option value="">Gênero</option>
-							<option value="M">Masculino</option>
-							<option value="F">Feminino</option>
+						<input class="form-control" id="capacidade"  placeholder="Capacidade" type="number" required>
+					</div>
+
+					<div class="col-sm-6 form-group">
+						<select class="form-control" id="disponibilidade" required>
+							<option value="True">Disponivel</option>
+							<option value="False">Indisponivel</option>
 						</select>
 					</div>
-					
-					<div class="col-sm-6 form-group">
-						<input class="form-control" id="idade"  placeholder="Idade" type="number" required>
-					</div>
-					
-					<div class="col-sm-6 form-group">
-						<input class="form-control" id="rua"  placeholder="Rua" type="text" required>
-					</div>
-					
-					<div class="col-sm-6 form-group">
-						<input class="form-control" id="bairro"  placeholder="Bairro" type="text" required>
-					</div>
 
 					<div class="col-sm-6 form-group">
-						<input class="form-control" id="numero"  placeholder="Numero" type="text" required>
-					</div>
-
-					<div class="col-sm-6 form-group">
-						<input class="form-control" id="cidade"  placeholder="Cidade" type="text" required>
-					</div>
-
-					<div class="col-sm-6 form-group">
-						<select class="form-control" id="uf" required>
-							<option value="">UF</option>
-						</select>
-					</div>
-					
-					<div class="col-sm-6 form-group">
-						<input class="form-control" id="telefone"  placeholder="Telefone" type="text" required>
-					</div>
-
-					<div class="col-sm-6 form-group">
-						<input class="form-control" id="codigo_matricula"  placeholder="Codigo Matricula" type="text" required>
-					</div>
-
-					<div class="col-sm-6 form-group">
-						<input class="form-control" id="ano_ingresso"  placeholder="Ano Ingresso" type="text" required>
-					</div>
-
-					<div class="col-sm-6 form-group">
-						<select class="form-control" id="universidade" required onchange="carregarCursos(this.value)">
-							<option value="">Universidade</option>
-							<!-- Opções serão preenchidas dinamicamente -->
-						</select>
-					</div>
-			
-					<div class="col-sm-6 form-group d-none" id="curso-container">
-						<select class="form-control" id="curso" required>
-							<option value="">Selecione um curso</option>
+						<select class="form-control" id="bilbioteca" required>
+							<option value="">Biblioteca</option>
 						</select>
 					</div>
 
