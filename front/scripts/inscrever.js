@@ -1,3 +1,4 @@
+// Capturar o botão de cadastro
 let btnCadastrar = document.querySelector("#ba1");
 
 // Função para cadastrar uma nova sala
@@ -8,11 +9,21 @@ btnCadastrar.addEventListener("click", async function () {
     let andar = document.querySelector("#andar").value.trim();
     let capacidade = document.querySelector("#capacidade").value.trim();
     let disponibilidade = document.querySelector("#disponibilidade").value;
-    let biblioteca = document.querySelector("#bilbioteca").value;
+    let biblioteca = document.querySelector("#biblioteca").value;
 
     // Validações básicas
     if (!nome || !numero || !andar || !capacidade || !biblioteca) {
         alert("Por favor, preencha todos os campos obrigatórios.");
+        return;
+    }
+
+    if (capacidade <= 0) {
+        alert("A capacidade deve ser maior que zero.");
+        return;
+    }
+
+    if (andar < 0) {
+        alert("O andar não pode ser negativo.");
         return;
     }
 
@@ -38,7 +49,12 @@ btnCadastrar.addEventListener("click", async function () {
 
         if (!response.ok) {
             const errorData = await response.json();
-            alert(`Erro ao cadastrar sala: ${errorData.detail}`);
+            // Tratando erros do backend
+            if (Array.isArray(errorData.detail)) {
+                alert(`Erro ao cadastrar sala: ${errorData.detail.map(e => e.msg).join(", ")}`);
+            } else {
+                alert(`Erro ao cadastrar sala: ${JSON.stringify(errorData.detail)}`);
+            }
             return;
         }
 
@@ -52,25 +68,35 @@ btnCadastrar.addEventListener("click", async function () {
     }
 });
 
-// Função para carregar as bibliotecas no select ao carregar a página
 document.addEventListener("DOMContentLoaded", async function () {
-    const selectBiblioteca = document.querySelector("#biblioteca");
-    try {
-        // Fazendo um GET para buscar as bibliotecas do backend
-        let response = await fetch("http://localhost:8000/bibliotecas");
-        if (!response.ok) throw new Error("Erro ao buscar bibliotecas.");
+    const bibliotecaSelect = document.getElementById("biblioteca");
 
-        const bibliotecas = await response.json();
-        
-        // Preencher o select com as bibliotecas
-        bibliotecas.forEach(bib => {
+    try {
+        // Enviar requisição ao backend para buscar bibliotecas
+        let response = await fetch("http://localhost:8000/bibliotecas", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+
+        // Verificar se a resposta é válida
+        if (!response.ok) {
+            throw new Error("Erro ao buscar bibliotecas.");
+        }
+
+        // Ler os dados do backend
+        let data = await response.json();
+
+        // Preencher o select com os nomes das bibliotecas
+        data.bibliotecas.forEach(biblioteca => {
             let option = document.createElement("option");
-            option.value = bib.idBiblioteca;
-            option.textContent = bib.nome;
-            selectBiblioteca.appendChild(option);
+            option.value = biblioteca.idBiblioteca;
+            option.textContent = biblioteca.nome;
+            bibliotecaSelect.appendChild(option);
         });
     } catch (error) {
-        alert(`Erro ao carregar bibliotecas: ${error.message}`);
-        console.error(error);
+        console.error("Erro ao carregar bibliotecas:", error);
+        alert("Erro ao carregar bibliotecas. Tente novamente.");
     }
 });

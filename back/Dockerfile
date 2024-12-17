@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Define variáveis de ambiente
 ENV DB_USER=postgres \
     DB_PASSWORD=123456789 \
-    DB_DNS=db:5432/meu_banco
+    DB_DNS=db:5432/banco
 
 # Expõe a porta 8000 para acesso externo
 EXPOSE 8000
