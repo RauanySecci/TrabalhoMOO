@@ -6,7 +6,7 @@ from db import Base
 class Biblioteca(Base):
     __tablename__ = 'biblioteca'
 
-    idBiblioteca = Column(Integer, primary_key=True, index=True)
+    idBiblioteca = Column(Integer, primary_key=True, index=True, autoincrement=True)
     nome = Column(String(30), nullable=False)
     departamento = Column(String(30), nullable=False)
     horarioFuncionamento = Column(String(30))
@@ -16,7 +16,6 @@ class Biblioteca(Base):
     usuarios = relationship("Usuario", back_populates="biblioteca")
 
 
-# Modelo para a tabela SalaDeEstudo
 class SalaDeEstudo(Base):
     __tablename__ = 'saladeestudo'
 
@@ -26,13 +25,18 @@ class SalaDeEstudo(Base):
     disponibilidade = Column(Boolean, nullable=False)
     biblioteca_id = Column(Integer, ForeignKey('biblioteca.idBiblioteca'), primary_key=True)
 
-    # Relacionamento reverso
+    # Relacionamento com Biblioteca
     biblioteca = relationship("Biblioteca", back_populates="salas")
-    equipamentos = relationship("Equipamento", back_populates="sala")
-    reservas = relationship("Reserva", back_populates="sala")
+
+    # Relacionamento com Equipamento
+    equipamentos = relationship(
+        "Equipamento",
+        back_populates="sala",
+        foreign_keys="[Equipamento.sala_numero, Equipamento.sala_andar, Equipamento.biblioteca_id]"
+    )
 
 
-# Modelo para a tabela Equipamento
+
 class Equipamento(Base):
     __tablename__ = 'equipamento'
 
@@ -40,12 +44,19 @@ class Equipamento(Base):
     nome = Column(String(30), nullable=False)
     statusDisponibilidades = Column(Boolean, nullable=False)
     dataAquisicao = Column(Date)
-    biblioteca_id = Column(Integer)
-    sala_numero = Column(Integer)
-    sala_andar = Column(Integer)
+
+    # Chaves estrangeiras
+    biblioteca_id = Column(Integer, ForeignKey('saladeestudo.biblioteca_id'))
+    sala_numero = Column(Integer, ForeignKey('saladeestudo.numero'))
+    sala_andar = Column(Integer, ForeignKey('saladeestudo.andar'))
 
     # Relacionamento com SalaDeEstudo
-    sala = relationship("SalaDeEstudo", back_populates="equipamentos")
+    sala = relationship(
+        "SalaDeEstudo",
+        back_populates="equipamentos",
+        foreign_keys=[sala_numero, sala_andar, biblioteca_id]
+    )
+
 
 
 # Modelo para a tabela Usuario

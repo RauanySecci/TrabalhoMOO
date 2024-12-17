@@ -100,3 +100,22 @@ async def buscar_salas_disponiveis(
             status_code=500,
             detail="Erro interno ao buscar salas disponíveis."
         )
+    
+# Pesquisa de bibliotecas presentes no banco
+@router.get("/bibliotecas")
+async def listar_bibliotecas(db: Session = Depends(get_db)):
+    """
+    Endpoint para listar todas as bibliotecas.
+    """
+    try:
+        # Consultar todas as bibliotecas no banco de dados
+        bibliotecas = db.query(Biblioteca).all()
+
+        # Retornar os dados em formato JSON
+        return {"bibliotecas": [{"idBiblioteca": b.idBiblioteca, "nome": b.nome} for b in bibliotecas]}
+    except Exception as err:
+        logger.error(f"Erro ao listar bibliotecas: {err}")
+        raise HTTPException(
+            status_code=500,
+            detail="Erro interno ao buscar bibliotecas."
+        )
