@@ -537,3 +537,480 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  passw
 connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
 
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T14:13:51.206174-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:51.562122-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:51.977159-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:52.363138-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:52.708402-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:53.027428-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:53.444261-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:53.833551-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:54.199141-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:54.752018-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:55.142110-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:55.498599-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:55.900947-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:56.280040-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:56.629463-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:57.017497-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:57.391545-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:57.784994-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:58.164849-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:58.548527-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:58.946212-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:59.519905-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:13:59.945659-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:14:00.332209-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:14:00.752156-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:14:01.158567-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:14:01.491692-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:14:01.845167-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:14:02.181057-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:14:02.580154-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:14:03.013480-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:21.155039-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:21.582660-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:21.997881-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:22.490081-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:22.907748-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:23.324102-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:23.676847-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:24.047978-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:24.373375-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:25.645089-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:26.006718-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:26.377156-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:26.777971-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:27.184540-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:27.619731-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:28.095374-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:28.467743-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:28.833089-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:29.266317-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:29.678547-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:30.035882-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.errors.UndefinedColumn) ERRO:  coluna biblioteca.idBiblioteca não existe
+LINE 1: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca...
+               ^
+HINT:  Talvez você queira fazer referência à coluna "biblioteca.idbiblioteca".
+
+[SQL: SELECT biblioteca."idBiblioteca" AS "biblioteca_idBiblioteca", biblioteca.nome AS biblioteca_nome, biblioteca.departamento AS biblioteca_departamento, biblioteca."horarioFuncionamento" AS "biblioteca_horarioFuncionamento" 
+FROM biblioteca]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-17T14:27:44.188944-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:27:44.509829-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:27:44.960756-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:27:45.414671-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:27:45.817039-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:05.148525-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:05.530988-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:05.895794-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:06.224371-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:06.561073-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:06.892659-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:07.273951-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:07.659461-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:08.026596-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:08.374257-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:08.744301-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:09.134324-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:09.544642-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:09.878055-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:10.312169-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:10.677201-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:11.022879-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:11.370389-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:11.802754-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:12.227393-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:12.602786-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:12.941036-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:13.298271-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:13.716344-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:14.165822-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:14.621683-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:14.999913-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:15.372289-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:15.770093-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:16.188401-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:16.587243-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:16.984758-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:17.371542-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:17.793794-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:18.134740-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:18.516854-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:18.996716-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:19.349455-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:19.759970-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:20.337936-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:20.723347-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:21.379939-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:21.755291-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:22.108939-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:22.432499-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:22.756449-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:23.167865-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:23.510143-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:23.911842-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:37:24.362124-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:40:05.229644-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:40:05.609441-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:40:05.990969-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:40:06.359738-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:40:06.646950-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T14:40:06.929199-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
