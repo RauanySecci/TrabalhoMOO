@@ -3,28 +3,23 @@ from sqlalchemy.orm import Session
 from db import get_db
 from models import SalaDeEstudo, Biblioteca
 from log import logger
+from schemas import SalaBase
 
 router = APIRouter()
 
 
+router = APIRouter()
+
 # Cadastro de Salas de Estudo
 @router.post("/salas")
-async def cadastrar_sala(
-    nome: str,
-    numero: int,
-    andar: int,
-    capacidade: float,
-    disponibilidade: bool,
-    biblioteca_id: int,
-    db: Session = Depends(get_db)
-):
+async def cadastrar_sala(sala: SalaBase, db: Session = Depends(get_db)):
     """
     Endpoint para cadastrar uma nova sala de estudo.
     """
     try:
         # Verifica se a sala já existe
         sala_existente = db.query(SalaDeEstudo).filter_by(
-            numero=numero, andar=andar, biblioteca=biblioteca_id
+            numero=sala.numero, andar=sala.andar, biblioteca_id=sala.biblioteca_id
         ).first()
 
         if sala_existente:
@@ -32,12 +27,12 @@ async def cadastrar_sala(
 
         # Cria um novo objeto SalaDeEstudo
         nova_sala = SalaDeEstudo(
-            nome=nome,
-            numero=numero,
-            andar=andar,
-            capacidade=capacidade,
-            disponibilidade=disponibilidade,
-            biblioteca=biblioteca_id
+            nome=sala.nome,
+            numero=sala.numero,
+            andar=sala.andar,
+            capacidade=sala.capacidade,
+            disponibilidade=sala.disponibilidade,
+            biblioteca_id=sala.biblioteca_id
         )
 
         # Adiciona ao banco de dados
