@@ -18,7 +18,7 @@ btnVerificar.addEventListener("click", async function () {
 
     try {
         // Enviar requisição para o backend
-        let response = await fetch("http://127.0.0.1:2000/salas-disponiveis", {
+        let response = await fetch("http://localhost:8000/salas-disponiveis", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -76,12 +76,12 @@ document.addEventListener("DOMContentLoaded", function() {
     filterForm.style.display = "none";
   });
 
-  document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener("DOMContentLoaded", async function () {
     const bibliotecaSelect = document.getElementById("biblioteca");
 
     try {
         // Enviar requisição ao backend para buscar bibliotecas
-        let response = await fetch("http://127.0.0.1:2000/bibliotecas", {
+        let response = await fetch("http://localhost:8000/bibliotecas", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"

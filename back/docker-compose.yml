@@ -19,7 +19,7 @@ services:
     container_name: minha_aplicacao
     restart: always
     ports:
-      - "5500:5500"
+      - "8000:8000"
     environment:
       - DB_USER=postgres
       - DB_PASSWORD=123456789

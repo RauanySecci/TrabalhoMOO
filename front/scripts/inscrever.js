@@ -1,203 +1,76 @@
-let btnInscrever = document.querySelector("#ba1");
+let btnCadastrar = document.querySelector("#ba1");
 
-// Arrays para armazenar os dados dos atletas
-let atletas = [];
-
-
-// Função para carregar cursos com base no código da universidade
-async function carregarCursos(universidadeCodigo) {
-    try {
-        // Verifica se o código da universidade foi fornecido
-        if (!universidadeCodigo) {
-            alert("Por favor, selecione uma universidade.");
-            return;
-        }
-
-        // Faz a requisição para obter os cursos com base no código da universidade
-        const response = await fetch(`http://127.0.0.1:2000/cursos?universidade_codigo=${universidadeCodigo}`);
-
-        // Verifica se a resposta foi bem-sucedida
-        if (!response.ok) {
-            // Tenta extrair a mensagem de erro do corpo da resposta
-            const errorData = await response.json();
-            const errorMessage = errorData.detail || "Erro desconhecido ao buscar cursos";
-            throw new Error(errorMessage);
-        }
-
-        const data = await response.json();
-
-        // Verifica se a resposta contém os dados esperados
-        if (!data.message) {
-            throw new Error("Dados inválidos recebidos do servidor.");
-        }
-
-        const selectCurso = document.querySelector("#curso");
-
-        // Limpando o dropdown antes de preencher
-        selectCurso.innerHTML = "<option value=''>Selecione um curso</option>";
-
-        // Preenchendo as opções com os cursos retornados
-        data.message.forEach((curso) => {
-            const option = document.createElement("option");
-            option.value = curso.NOME; // O valor da opção será o nome do curso
-            option.textContent = curso.NOME;  // Texto exibido será o nome do curso
-            selectCurso.appendChild(option);
-        });
-    } catch (error) {
-        console.error("Erro ao carregar cursos:", error);
-        
-        // Exibe o erro para o usuário
-        alert(`Erro ao carregar cursos: ${error.message}`);
-    }
-}
-
-
-// Função para buscar universidades do backend
-async function carregarUniversidades() {
-    try {
-        // Fazendo a requisição GET para a rota de universidades
-        const response = await fetch("http://127.0.0.1:2000/universidades"); // Ajuste o URL se necessário
-        if (!response.ok) {
-            throw new Error("Erro ao buscar universidades");
-        }
-
-        const data = await response.json();
-
-        // Obtendo o elemento <select> do HTML
-        const selectUniversidade = document.querySelector("#universidade");
-
-        // Limpando o select antes de adicionar os novos dados
-        selectUniversidade.innerHTML = "<option value=''>Selecione uma universidade</option>";
-
-        // Iterando sobre os dados recebidos para criar as opções
-        data.message.forEach((uni) => {
-            const option = document.createElement("option");
-            option.value = uni.CODIGO_MEC; // Valor será o código MEC
-            option.textContent = uni.NOME; // Texto exibido será o nome da universidade
-            selectUniversidade.appendChild(option);
-        });
-    } catch (error) {
-        console.error("Erro ao carregar universidades: ", error.detail);
-        alert("Erro ao carregar universidades: ", error.detail);
-    }
-}
-
-// Adicionar novo atleta ao clicar no botão "Inscrever"
-btnInscrever.addEventListener("click", async function () {
+// Função para cadastrar uma nova sala
+btnCadastrar.addEventListener("click", async function () {
     // Capturando os valores dos campos do formulário
-    let cpf = document.querySelector("#cpf").value.trim();
     let nome = document.querySelector("#nome").value.trim();
-    let genero = document.querySelector("#genero").value.trim().toUpperCase();
-    let idade = document.querySelector("#idade").value.trim();
-    let rua = document.querySelector("#rua").value.trim();
-    let bairro = document.querySelector("#bairro").value.trim();
     let numero = document.querySelector("#numero").value.trim();
-    let cidade = document.querySelector("#cidade").value.trim();
-    let uf = document.querySelector("#uf").value.trim().toUpperCase();
-    let telefone = document.querySelector("#telefone").value.trim();
-    let codigoMatricula = document.querySelector("#codigo_matricula").value.trim();
-    let anoIngresso = document.querySelector("#ano_ingresso").value.trim();
-    let universidade = document.querySelector("#universidade").value.trim();
-    let curso = document.querySelector("#curso").value.trim();
+    let andar = document.querySelector("#andar").value.trim();
+    let capacidade = document.querySelector("#capacidade").value.trim();
+    let disponibilidade = document.querySelector("#disponibilidade").value;
+    let biblioteca = document.querySelector("#bilbioteca").value;
 
-    // Validações (mantidas do código anterior)
-    if (!cpf || cpf.length !== 11 || isNaN(cpf)) {
-        alert("CPF inválido. Certifique-se de que tem 11 dígitos e não está vazio.");
+    // Validações básicas
+    if (!nome || !numero || !andar || !capacidade || !biblioteca) {
+        alert("Por favor, preencha todos os campos obrigatórios.");
         return;
     }
-    // (As outras validações seguem iguais...)
 
-    // Criando o objeto para enviar ao backend
-    let atleta = {
-        cpf,
+    // Montando o objeto sala
+    let sala = {
         nome,
-        genero,
-        idade: parseInt(idade),
-        rua,
-        bairro,
         numero: parseInt(numero),
-        cidade,
-        uf,
-        telefone,
-        codigo_matricula: codigoMatricula,
-        ano_ingresso: parseInt(anoIngresso),
-        universidade,
-        nome_curso: curso,
+        andar: parseInt(andar),
+        capacidade: parseFloat(capacidade),
+        disponibilidade: disponibilidade === "True",
+        biblioteca_id: parseInt(biblioteca)
     };
 
-    // Fazendo a requisição POST para o backend
+    // Enviando os dados ao backend via POST
     try {
-        const response = await fetch("http://127.0.0.1:2000/insert-atleta", {
+        const response = await fetch("http://localhost:8000/salas", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(atleta),
+            body: JSON.stringify(sala),
         });
 
         if (!response.ok) {
-            const errorData = await response.json(); // Obtém o corpo da resposta com detalhes do erro
-            if (errorData && errorData.detail) {
-                // Exibe a mensagem detalhada do backend
-                alert(`Erro ao inscrever atleta: ${errorData.detail}`);
-                console.error("Erro do backend:", errorData.detail);
-            } else {
-                // Caso a mensagem detalhada não esteja disponível
-                throw new Error(`Erro na requisição: ${response.status}`);
-            }
+            const errorData = await response.json();
+            alert(`Erro ao cadastrar sala: ${errorData.detail}`);
             return;
         }
 
-        // Sucesso: Lida com a resposta do backend
-        const data = await response.json();
-        alert("Atleta inscrito com sucesso!");
-        console.log("Resposta do backend:", data);
+        alert("Sala cadastrada com sucesso!");
 
         // Limpando os campos do formulário
-        document.querySelectorAll(".form-control").forEach((input) => {
-            input.value = "";
-        });
+        document.querySelectorAll(".form-control").forEach(input => input.value = "");
     } catch (error) {
-        // Lida com erros inesperados
-        alert(`Erro ao inscrever atleta: ${error.message}`);
-        console.error("Erro inesperado:", error);
+        alert(`Erro inesperado: ${error.message}`);
+        console.error("Erro:", error);
     }
 });
 
+// Função para carregar as bibliotecas no select ao carregar a página
+document.addEventListener("DOMContentLoaded", async function () {
+    const selectBiblioteca = document.querySelector("#biblioteca");
+    try {
+        // Fazendo um GET para buscar as bibliotecas do backend
+        let response = await fetch("http://localhost:8000/bibliotecas");
+        if (!response.ok) throw new Error("Erro ao buscar bibliotecas.");
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     carregarUFs();
-//     carregarUniversidades();
-// });
-
-document.addEventListener("DOMContentLoaded", function () {
-    carregarUFs();
-    carregarUniversidades();
-
-    // Referências aos campos
-    const universidadeSelect = document.querySelector("#universidade");
-    const cursoContainer = document.querySelector("#curso-container");
-
-    // Evento para mostrar o campo de curso quando uma universidade for selecionada
-    universidadeSelect.addEventListener("change", function () {
-        if (this.value) {
-            // Mostra o campo curso
-            cursoContainer.classList.remove("d-none");
-        } else {
-            // Esconde o campo curso
-            cursoContainer.classList.add("d-none");
-        }
-    });
-
-    // Adiciona validação antes do envio do formulário
-    const btnInscrever = document.querySelector("#ba1");
-    btnInscrever.addEventListener("click", function (event) {
-        const universidadeValue = universidadeSelect.value;
-        const cursoValue = document.querySelector("#curso").value;
-
-        if (!universidadeValue || !cursoValue) {
-            event.preventDefault(); // Impede o envio do formulário
-            alert("Por favor, selecione tanto a universidade quanto o curso.");
-        }
-    });
+        const bibliotecas = await response.json();
+        
+        // Preencher o select com as bibliotecas
+        bibliotecas.forEach(bib => {
+            let option = document.createElement("option");
+            option.value = bib.idBiblioteca;
+            option.textContent = bib.nome;
+            selectBiblioteca.appendChild(option);
+        });
+    } catch (error) {
+        alert(`Erro ao carregar bibliotecas: ${error.message}`);
+        console.error(error);
+    }
 });

@@ -5,6 +5,7 @@ from db import Base
 # Modelo Biblioteca
 class Biblioteca(Base):
     __tablename__ = 'biblioteca'
+    __table_args__ = {'schema': 'public'}  # Adicione esta linha
 
     idBiblioteca = Column("idbiblioteca", Integer, primary_key=True, autoincrement=True)
     nome = Column(String(30), nullable=False)
@@ -20,10 +21,11 @@ class Biblioteca(Base):
 # Modelo SalaDeEstudo
 class SalaDeEstudo(Base):
     __tablename__ = 'saladeestudo'
+    __table_args__ = {'schema': 'public'}  # Adicione esta linha
 
     numero = Column(Integer, primary_key=True)
     andar = Column(Integer, primary_key=True)
-    biblioteca_id = Column(Integer, ForeignKey('biblioteca.idbiblioteca'), primary_key=True)
+    biblioteca_id = Column(Integer, ForeignKey('public.biblioteca.idbiblioteca'), primary_key=True)
     nome = Column(String(30), nullable=False)
     capacidade = Column(Float)
     disponibilidade = Column(Boolean, nullable=False)
@@ -51,14 +53,15 @@ class SalaDeEstudo(Base):
 # Modelo Equipamento
 class Equipamento(Base):
     __tablename__ = 'equipamento'
+    __table_args__ = {'schema': 'public'}  # Adicione esta linha
 
     idequipamento = Column("idequipamento", Integer, primary_key=True, autoincrement=True)
     nome = Column(String(30), nullable=False)
     statusdisponibilidades = Column("statusdisponibilidades", Boolean, nullable=False)
     dataaquisicao = Column("dataaquisicao", Date)
-    biblioteca_id = Column(Integer, ForeignKey('saladeestudo.biblioteca_id'))
-    numero = Column(Integer, ForeignKey('saladeestudo.numero'))
-    andar = Column(Integer, ForeignKey('saladeestudo.andar'))
+    biblioteca_id = Column(Integer, ForeignKey('public.saladeestudo.biblioteca_id'))
+    numero = Column(Integer, ForeignKey('public.saladeestudo.numero'))
+    andar = Column(Integer, ForeignKey('public.saladeestudo.andar'))
 
     sala = relationship(
         "SalaDeEstudo",
@@ -72,11 +75,12 @@ class Equipamento(Base):
 # Modelo Usuario
 class Usuario(Base):
     __tablename__ = 'usuario'
+    __table_args__ = {'schema': 'public'}  # Adicione esta linha
 
     cpf = Column(Integer, primary_key=True, index=True)
     nome = Column(String(255), nullable=False)
     email = Column(String(255), unique=True, nullable=False)
-    biblioteca_id = Column(Integer, ForeignKey('biblioteca.idbiblioteca'))
+    biblioteca_id = Column(Integer, ForeignKey('public.biblioteca.idbiblioteca'))
 
     # Relacionamentos
     biblioteca_rel = relationship("Biblioteca", back_populates="usuarios")
@@ -88,8 +92,9 @@ class Usuario(Base):
 # Modelo MembroComunidadeUSP
 class MembroComunidadeUSP(Base):
     __tablename__ = 'membrocomunidadeusp'
+    __table_args__ = {'schema': 'public'}  # Adicione esta linha
 
-    cpf = Column(Integer, ForeignKey('usuario.cpf'), primary_key=True)
+    cpf = Column(Integer, ForeignKey('public.usuario.cpf'), primary_key=True)
     tipomembro = Column("tipomembro", String(50))
 
     usuario = relationship("Usuario", back_populates="membro_usp")
@@ -98,8 +103,9 @@ class MembroComunidadeUSP(Base):
 # Modelo Bibliotecario
 class Bibliotecario(Base):
     __tablename__ = 'bibliotecario'
+    __table_args__ = {'schema': 'public'}  # Adicione esta linha
 
-    cpf = Column(Integer, ForeignKey('usuario.cpf'), primary_key=True)
+    cpf = Column(Integer, ForeignKey('public.usuario.cpf'), primary_key=True)
     nivelpermissao = Column("nivelpermissao", String(50))
     datacontratacao = Column("datacontratacao", Date)
     salario = Column(Float)
@@ -110,6 +116,7 @@ class Bibliotecario(Base):
 # Modelo Notificacao
 class Notificacao(Base):
     __tablename__ = 'notificacao'
+    __table_args__ = {'schema': 'public'}  # Adicione esta linha
 
     idnotificacao = Column("idnotificacao", Integer, primary_key=True, autoincrement=True)
     titulo = Column(String(255), nullable=False)
@@ -120,14 +127,15 @@ class Notificacao(Base):
 # Modelo Reserva
 class Reserva(Base):
     __tablename__ = 'reserva'
+    __table_args__ = {'schema': 'public'}  # Adicione esta linha
 
     idreserva = Column("idreserva", Integer, primary_key=True, autoincrement=True)
     datareserva = Column("datareserva", Date, nullable=False)
-    biblioteca_id = Column(Integer, ForeignKey('saladeestudo.biblioteca_id'))
-    numero = Column(Integer, ForeignKey('saladeestudo.numero'))
-    andar = Column(Integer, ForeignKey('saladeestudo.andar'))
+    biblioteca_id = Column(Integer, ForeignKey('public.saladeestudo.biblioteca_id'))
+    numero = Column(Integer, ForeignKey('public.saladeestudo.numero'))
+    andar = Column(Integer, ForeignKey('public.saladeestudo.andar'))
     horarioreserva = Column("horarioreserva", String(50))
-    usuario_id = Column(Integer, ForeignKey('usuario.cpf'))
+    usuario_id = Column(Integer, ForeignKey('public.usuario.cpf'))
 
     # Relacionamentos
     sala = relationship(

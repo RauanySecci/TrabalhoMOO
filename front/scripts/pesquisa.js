@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Erro: CPF não encontrado.");
     } else {
         // Fazer a requisição POST para a API de Atleta
-        fetch("http://127.0.0.1:2000/get-atleta-infos", {
+        fetch("http://localhost:8000/get-atleta-infos", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById("atleta-telefone").textContent = atleta.telefone;
 
                 // Requisição POST para buscar os times
-                fetch("http://127.0.0.1:2000/times", {
+                fetch("http://localhost:8000/times", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

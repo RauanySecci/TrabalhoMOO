@@ -6,6 +6,8 @@ from log import logger
 
 router = APIRouter()
 
+
+# Cadastro de Salas de Estudo
 @router.post("/salas")
 async def cadastrar_sala(
     nome: str,
@@ -17,42 +19,39 @@ async def cadastrar_sala(
     db: Session = Depends(get_db)
 ):
     """
-    Endpoint para cadastrar uma nova sala.
+    Endpoint para cadastrar uma nova sala de estudo.
     """
     try:
-        # Verificar se a biblioteca existe
-        biblioteca = db.query(Biblioteca).filter(Biblioteca.idBiblioteca == biblioteca_id).first()
-        if not biblioteca:
-            raise HTTPException(
-                status_code=404,
-                detail="Biblioteca não encontrada."
-            )
+        # Verifica se a sala já existe
+        sala_existente = db.query(SalaDeEstudo).filter_by(
+            numero=numero, andar=andar, biblioteca=biblioteca_id
+        ).first()
 
-        # Criar nova sala
+        if sala_existente:
+            raise HTTPException(status_code=400, detail="Sala já cadastrada.")
+
+        # Cria um novo objeto SalaDeEstudo
         nova_sala = SalaDeEstudo(
             nome=nome,
             numero=numero,
             andar=andar,
             capacidade=capacidade,
             disponibilidade=disponibilidade,
-            biblioteca_id=biblioteca_id
+            biblioteca=biblioteca_id
         )
 
-        # Adicionar ao banco de dados
+        # Adiciona ao banco de dados
         db.add(nova_sala)
         db.commit()
         db.refresh(nova_sala)
 
-        return {"message": "Sala cadastrada com sucesso.", "sala": nova_sala.id}
+        return {"message": "Sala cadastrada com sucesso!", "sala_id": nova_sala.numero}
 
-    except Exception as err:
-        logger.error(f"Erro ao cadastrar sala: {err}")
-        raise HTTPException(
-            status_code=500,
-            detail="Erro interno ao cadastrar sala."
-        )
+    except Exception as e:
+        db.rollback()
+        raise HTTPException(status_code=500, detail=f"Erro ao cadastrar sala: {str(e)}")
 
-
+# Pesquisa de 
 @router.get("/salas-disponiveis")
 async def buscar_salas_disponiveis(
     biblioteca_id: int,
