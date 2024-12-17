@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:14
+    container_name: postgres_container
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456789
+      POSTGRES_DB: meu_banco
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: minha_aplicacao
+    restart: always
+    ports:
+      - "5500:5500"
+    environment:
+      - DB_USER=postgres
+      - DB_PASSWORD=123456789
+      - DB_DNS=db:5432/meu_banco
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

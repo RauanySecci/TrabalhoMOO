@@ -1014,3 +1014,419 @@ FROM biblioteca]
 2024-12-17T14:40:06.359738-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
 2024-12-17T14:40:06.646950-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
 2024-12-17T14:40:06.929199-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: 'Biblioteca' object has no attribute 'idBiblioteca'
+2024-12-17T15:06:13.713762-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:14.059374-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:14.365348-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:14.698327-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:15.072388-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:15.391168-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:15.694713-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:16.069391-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:16.409161-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:16.714166-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:17.066990-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:17.372257-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:17.708277-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:18.049417-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:18.425218-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:18.803040-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:19.145309-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:19.494190-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:19.883075-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:20.194586-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:20.569894-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:20.878683-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:21.217176-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:21.552339-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:21.895949-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:22.232359-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:22.562830-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:22.862595-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:23.261683-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:23.597132-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:24.079833-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:24.439020-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:24.754642-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:25.115460-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:25.461979-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:25.796716-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:26.136973-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:26.471296-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:26.800768-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:27.143529-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:27.541388-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:27.876922-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:28.616818-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:29.154704-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:29.456403-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:29.816483-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:30.109805-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:30.399604-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:30.702172-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:31.073251-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:31.398044-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:31.726274-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:32.045111-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:32.422973-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:32.738138-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:33.017621-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:33.304287-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:33.594647-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:33.939103-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:34.247191-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:34.523417-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:34.800349-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:35.100448-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:35.411251-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:35.701483-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:36.016992-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:36.354424-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:36.709512-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:37.010808-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:37.336024-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:37.694994-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:38.034601-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:38.360293-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:38.769910-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:39.135413-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:39.475842-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:39.911664-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:40.331998-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:40.718774-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:41.024593-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:41.338592-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:41.683675-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:42.004465-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:42.401430-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:42.809611-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:43.279432-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:43.659794-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:06:44.184031-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:15.830543-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:16.172489-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:16.527389-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:16.868506-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:17.226139-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:17.571894-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:17.911288-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:18.249184-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:18.591708-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:18.890911-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:19.267485-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:19.610695-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:19.994437-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:20.350603-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:20.691673-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-17T15:49:21.105334-0300 ERROR | routes.py | listar_bibliotecas | Erro ao listar bibliotecas: (psycopg2.OperationalError) connection to server at "179.223.40.3", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
