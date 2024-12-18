@@ -79,9 +79,9 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
 
    2. Acessar a Pasta do Projeto
 
-    Navegue até a pasta do projeto:
+        Navegue até a pasta do projeto:
 
-        cd TrabalhoMOO
+            cd TrabalhoMOO
 
    3. Configurar o Backend com Docker
 
@@ -123,7 +123,7 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
 
 3. Utilizar a Aplicação
     
-    A página inicial será aberta no navegador (geralmente em http://127.0.0.1:5500).
+    A página inicial será aberta no navegador (geralmente em http://127.0.0.1:5501).
 
     Funcionalidades Disponíveis:
 
