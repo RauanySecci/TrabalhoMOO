@@ -51,7 +51,7 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
     docker-compose --version
     ```
 
- 🪟 Windows
+    🪟 Windows
 
  1. Instalar o Docker Desktop:
 
