@@ -125,4 +125,3 @@ document.addEventListener("DOMContentLoaded", async function () {
         alert("Erro ao carregar bibliotecas. Tente novamente.");
     }
 });
-
