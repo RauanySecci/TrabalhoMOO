@@ -48,7 +48,7 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
      Verificar a instalação:
 
     ```console
-        docker-compose --version
+    docker-compose --version
     ```
 
  🪟 Windows
@@ -70,8 +70,8 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
      g. Abra o terminal (PowerShell ou CMD) e execute:
 
     ```console
-        docker --version
-        docker-compose --version
+    docker --version
+    docker-compose --version
     ```
 
 1. Clonar o Repositório
