@@ -67,7 +67,7 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
 
         f. Verificar a instalação:
 
-        g. Abra o terminal (PowerShell ou CMD) e execute:
+            Abra o terminal (PowerShell ou CMD) e execute:
 
         ```console
         docker --version
