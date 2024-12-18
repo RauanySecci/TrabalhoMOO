@@ -1,80 +1,97 @@
-let btnVerificar = document.querySelector("#ba2");
+document.addEventListener("DOMContentLoaded", function () {
+    const btnBuscar = document.getElementById("ba2"); // Botão de buscar
+    const filterButton = document.getElementById("filter-button"); // Botão de filtros
+    const filterForm = document.getElementById("filter-form"); // Formulário de filtros
 
-btnVerificar.addEventListener("click", async function () {
-    // Capturar o valor do campo número
-    let numero = document.querySelector("#numero").value.trim();
-
-    // Validação: número não pode ser vazio
-    if (!numero) {
-        alert("O campo número não pode estar vazio.");
-        return;
-    }
-
-    // Validação: verificar se o valor é um número válido e contém apenas dígitos
-    if (!/^\d+$/.test(numero)) {
-        alert("Número inválido. Certifique-se de que contém apenas dígitos numéricos.");
-        return;
-    }
-
-    try {
-        // Enviar requisição para o backend
-        let response = await fetch("http://localhost:8000/salas-disponiveis", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ numero: numero }) // Envia o número no corpo da requisição
-        });
-
-        // Verificar se a resposta do servidor é válida
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.detail || "Erro na requisição ao servidor.");
-        }
-
-        // Ler a resposta do backend
-        let data = await response.json();
-
-        if (data.exists) {
-            // Número encontrado no banco de dados
-            sessionStorage.setItem("numero", numero);
-
-            // Redirecionar para a página de pesquisa
-            window.location.href = "pesquisa.html";
+    // Toggle para mostrar/ocultar o formulário de filtros
+    filterButton.addEventListener("click", function () {
+        if (filterForm.classList.contains("hidden")) {
+            filterForm.classList.remove("hidden");
+            filterForm.style.display = "block";
         } else {
-            // Número não encontrado no banco de dados
-            alert("Número não encontrado no banco de dados.");
+            filterForm.classList.add("hidden");
+            filterForm.style.display = "none";
         }
-    } catch (error) {
-        // Exibir a mensagem de erro no console para depuração
-        console.error("Erro ao conectar ao servidor:", error);
+    });
 
-        // Exibir uma mensagem de erro detalhada ao usuário
-        alert(`Erro ao conectar ao servidor: ${error.message}`);
+    // Função para validar campos
+    function validarCampos(numero, andar, capacidade) {
+        const erros = [];
+
+        // Validação do número da sala
+        if (!numero) {
+            erros.push("O número da sala é obrigatório.");
+        } else if (isNaN(numero) || parseInt(numero) < 0) {
+            erros.push("O número da sala deve ser um número inteiro positivo.");
+        }
+
+        // Validação do andar (se fornecido)
+        if (andar) {
+            if (isNaN(andar) || parseInt(andar) < 0) {
+                erros.push("O andar deve ser um número inteiro positivo.");
+            }
+        }
+
+        // Validação da capacidade (se fornecida)
+        if (capacidade) {
+            if (isNaN(capacidade) || parseFloat(capacidade) <= 0) {
+                erros.push("A capacidade deve ser um número positivo maior que zero.");
+            }
+        }
+
+        return erros;
     }
+
+    // Evento de busca
+    btnBuscar.addEventListener("click", function () {
+        const numero = document.getElementById("numero").value.trim();
+        const andar = document.getElementById("andar").value.trim();
+        const biblioteca = document.getElementById("biblioteca").value.trim();
+        const capacidade = document.getElementById("capacidade").value.trim();
+        const disponibilidade = document.getElementById("disponibilidade").value.trim();
+
+        // Validação dos campos
+        const erros = validarCampos(numero, andar, capacidade);
+
+        if (erros.length > 0) {
+            alert("Erros encontrados:\n- " + erros.join("\n- "));
+            return;
+        }
+
+        // Montar os parâmetros de consulta (query string)
+        const params = new URLSearchParams();
+        params.append("numero", numero);
+
+        if (andar) params.append("andar", andar);
+        if (biblioteca) params.append("biblioteca_id", biblioteca);
+        if (capacidade) params.append("capacidade", capacidade);
+        if (disponibilidade) params.append("disponibilidade", disponibilidade);
+
+        // URL do backend com os parâmetros montados
+        const url = `http://localhost:8000/busca-sala?${params.toString()}`;
+
+        // Fazer a requisição para verificar os dados e redirecionar
+        fetch(url, { method: "GET" })
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(err => { throw new Error(err.detail); });
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Armazenar o resultado no localStorage para a página de pesquisa
+                localStorage.setItem("resultado_salas", JSON.stringify(data.salas));
+
+                // Redirecionar para a página de pesquisa
+                window.location.href = "pesquisa.html";
+            })
+            .catch(error => {
+                console.error("Erro ao buscar dados:", error.message);
+                alert(`Erro ao buscar salas: ${error.message}`);
+            });
+    });
 });
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    const filterButton = document.getElementById("filter-button");
-    const filterForm = document.getElementById("filter-form");
-  
-    filterButton.addEventListener("click", function() {
-      if (filterForm.style.display === "none" || filterForm.classList.contains("hidden")) {
-        filterForm.style.display = "flex"; // Mostra o formulário
-        filterForm.classList.remove("hidden");
-        filterButton.textContent = "Filtros";
-      } else {
-        filterForm.reset(); // Limpa os inputs do formulário
-        filterForm.style.display = "none"; // Oculta o formulário
-        filterForm.classList.add("hidden");
-        filterButton.textContent = "Filtros";
-      }
-    });
-  
-    // Inicializa o formulário oculto
-    filterForm.style.display = "none";
-  });
 
 document.addEventListener("DOMContentLoaded", async function () {
     const bibliotecaSelect = document.getElementById("biblioteca");
