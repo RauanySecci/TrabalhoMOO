@@ -159,7 +159,10 @@ Se necessário, reinicie os containers com:
 
 **Agnes Bressan**
 
+**Carol Elias**
+
 **Rauany Secci**
 
+**Rhayna Casado**
 
 Seguindo esses passos, você terá a aplicação funcionando corretamente e poderá explorar todas as funcionalidades disponíveis. 🚀
