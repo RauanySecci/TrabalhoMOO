@@ -4,6 +4,7 @@ from db import get_db
 from models import SalaDeEstudo, Biblioteca
 from log import logger
 from schemas import SalaBase
+from fastapi import Query
 
 router = APIRouter()
 
@@ -46,54 +47,40 @@ async def cadastrar_sala(sala: SalaBase, db: Session = Depends(get_db)):
         db.rollback()
         raise HTTPException(status_code=500, detail=f"Erro ao cadastrar sala: {str(e)}")
 
-# Pesquisa de 
-@router.get("/salas-disponiveis")
-async def buscar_salas_disponiveis(
-    biblioteca_id: int,
+# Pesquisa de Salas de Estudos
+@router.get("/busca-sala")
+def buscar_sala(
+    numero: int,
+    andar: int = Query(None),
+    biblioteca_id: int = Query(None),
+    capacidade: float = Query(None),
+    disponibilidade: bool = Query(None),
     db: Session = Depends(get_db)
 ):
     """
-    Endpoint para buscar salas disponíveis por biblioteca.
+    Busca por salas baseadas nos filtros fornecidos.
     """
     try:
-        # Verificar se a biblioteca existe
-        biblioteca = db.query(Biblioteca).filter(Biblioteca.idBiblioteca == biblioteca_id).first()
-        if not biblioteca:
-            raise HTTPException(
-                status_code=404,
-                detail="Biblioteca não encontrada."
-            )
+        query = db.query(SalaDeEstudo).filter(SalaDeEstudo.numero == numero)
 
-        # Buscar salas disponíveis
-        salas_disponiveis = db.query(SalaDeEstudo).filter(
-            SalaDeEstudo.biblioteca_id == biblioteca_id,
-            SalaDeEstudo.disponibilidade == True
-        ).all()
+        if andar:
+            query = query.filter(SalaDeEstudo.andar == andar)
+        if biblioteca_id:
+            query = query.filter(SalaDeEstudo.biblioteca_id == biblioteca_id)
+        if capacidade:
+            query = query.filter(SalaDeEstudo.capacidade >= capacidade)
+        if disponibilidade is not None:
+            query = query.filter(SalaDeEstudo.disponibilidade == disponibilidade)
 
-        # Verificar se há salas disponíveis
-        if not salas_disponiveis:
-            return {"message": "Nenhuma sala disponível nesta biblioteca."}
+        salas = query.all()
 
-        # Retornar as salas encontradas
-        salas = [
-            {
-                "nome": sala.nome,
-                "numero": sala.numero,
-                "andar": sala.andar,
-                "capacidade": sala.capacidade,
-                "disponibilidade": sala.disponibilidade,
-            }
-            for sala in salas_disponiveis
-        ]
+        if not salas:
+            raise HTTPException(status_code=404, detail="Nenhuma sala encontrada.")
 
-        return {"message": "Salas disponíveis encontradas.", "salas": salas}
+        return {"salas": [sala.__dict__ for sala in salas]}
 
-    except Exception as err:
-        logger.error(f"Erro ao buscar salas disponíveis: {err}")
-        raise HTTPException(
-            status_code=500,
-            detail="Erro interno ao buscar salas disponíveis."
-        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Erro interno: {str(e)}")
     
 # Pesquisa de bibliotecas presentes no banco
 @router.get("/bibliotecas")
