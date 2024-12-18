@@ -47,9 +47,9 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
 
      Verificar a instalação:
 
-        ```console
-         docker-compose --version
-        ```
+    ```console
+        docker-compose --version
+    ```
 
  🪟 Windows
 
@@ -69,17 +69,17 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
 
      g. Abra o terminal (PowerShell ou CMD) e execute:
 
-        ```console
-         docker --version
-         docker-compose --version
-        ```
+    ```console
+        docker --version
+        docker-compose --version
+    ```
 
 1. Clonar o Repositório
 
    1. Clone o projeto do GitHub:
-        ```console
-        git clone https://github.com/RauanySecci/TrabalhoMOO.git
-        ```
+    ```console
+    git clone https://github.com/RauanySecci/TrabalhoMOO.git
+    ```
 
    2. Acessar a Pasta do Projeto
 
