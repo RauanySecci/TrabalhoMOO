@@ -5,7 +5,10 @@ FROM python:3.10
 WORKDIR /app
 
 # Copia os arquivos da aplicação para o container
+COPY ./requirements.txt /app/requirements.txt
+
 COPY . /app
+
 
 # Instala as dependências necessárias
 RUN pip install --no-cache-dir -r requirements.txt
@@ -13,7 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Define variáveis de ambiente
 ENV DB_USER=postgres \
     DB_PASSWORD=123456789 \
-    DB_DNS=db:5432/banco
+    DB_DNS=db:5432/postgres
 
 # Expõe a porta 8000 para acesso externo
 EXPOSE 8000

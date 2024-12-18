@@ -8,11 +8,14 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123456789
-      POSTGRES_DB: banco
+      POSTGRES_DB: postgres
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./banco/bd.sql:/docker-entrypoint-initdb.d/bd.sql
+    networks:
+      - app_network
 
   app:
     build: .
@@ -23,9 +26,20 @@ services:
     environment:
       - DB_USER=postgres
       - DB_PASSWORD=123456789
-      - DB_DNS=db:5432/banco
+      - DB_DNS=db:5432/postgres
     depends_on:
       - db
+    volumes:
+      - .:/app
+
+
+
+    networks:
+      - app_network
 
 volumes:
   postgres_data:
+     driver: local
+networks:
+  app_network:
+    driver: bridge
