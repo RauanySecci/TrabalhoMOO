@@ -53,28 +53,28 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
 
     🪟 Windows
 
- 1. Instalar o Docker Desktop:
+    1. Instalar o Docker Desktop:
 
-     a. Acesse o site oficial e baixe o Docker Desktop: Download Docker Desktop.
-     
-     b. Siga o assistente de instalação.
-     
-     c. Reinicie o computador, se necessário.
+        a. Acesse o site oficial e baixe o Docker Desktop: Download Docker Desktop.
+        
+        b. Siga o assistente de instalação.
+        
+        c. Reinicie o computador, se necessário.
 
-     d. Habilitar WSL 2 (caso solicitado durante a instalação):
-     
-     e. Baixe e instale o WSL 2: Instruções para WSL.
+        d. Habilitar WSL 2 (caso solicitado durante a instalação):
+        
+        e. Baixe e instale o WSL 2: Instruções para WSL.
 
-     f. Verificar a instalação:
+        f. Verificar a instalação:
 
-     g. Abra o terminal (PowerShell ou CMD) e execute:
+        g. Abra o terminal (PowerShell ou CMD) e execute:
 
-    ```console
-    docker --version
-    docker-compose --version
-    ```
+        ```console
+        docker --version
+        docker-compose --version
+        ```
 
-1. Clonar o Repositório
+2. Clonar o Repositório
 
    1. Clone o projeto do GitHub:
     ```console
@@ -106,7 +106,7 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
     
     b. Configurar o banco de dados PostgreSQL na porta 5432.
 
-2. Configurar o Frontend
+3. Configurar o Frontend
 
     Abra a pasta do projeto no Visual Studio Code:
 
@@ -128,7 +128,7 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
         Clique com o botão direito no arquivo index.html.
         Selecione "Open with Live Server".
 
-3. Utilizar a Aplicação
+4. Utilizar a Aplicação
     
     A página inicial será aberta no navegador (geralmente em http://127.0.0.1:5501).
 
