@@ -47,7 +47,9 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
 
      Verificar a instalação:
 
+        ```console
          docker-compose --version
+        ```
 
  🪟 Windows
 
@@ -67,8 +69,10 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
 
      g. Abra o terminal (PowerShell ou CMD) e execute:
 
+        ```console
          docker --version
          docker-compose --version
+        ```
 
 1. Clonar o Repositório
 
@@ -80,18 +84,21 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
    2. Acessar a Pasta do Projeto
 
         Navegue até a pasta do projeto:
-
+            ```console
             cd TrabalhoMOO
+            ```
 
    3. Configurar o Backend com Docker
 
        Acesse a pasta back:
-
+            ```console
             cd back
+            ```
 
     Rode o Docker Compose para inicializar o backend e o banco de dados:
-
+        ```console
         docker compose up --build
+        ```
 
     O comando docker compose up --build irá:
     
@@ -150,9 +157,10 @@ Este projeto é uma aplicação web simples que permite cadastrar salas de estud
 ## 🐳 Observação sobre o Docker
 
 Se necessário, reinicie os containers com:
-
+    ```console
     docker compose down
     docker compose up --build
+    ```
 
 
 ## 🤝 Contribuidores
